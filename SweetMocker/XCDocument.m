@@ -10,6 +10,7 @@
 #import "XCMockConfig.h"
 #import "XCMockData.h"
 #import "XCOneMock.h"
+#import "XCDemoWindowController.h"
 
 @interface XCDocument () <NSTableViewDataSource, NSTableViewDelegate, NSComboBoxDataSource, NSComboBoxDelegate, NSTextFieldDelegate, NSTextViewDelegate>
 
@@ -22,6 +23,8 @@
 
 @property (nonatomic, strong) XCMockData *editingMock;
 @property (nonatomic, strong) XCOneMock *editingOneMock;
+
+@property (nonatomic, strong) XCDemoWindowController *demoWindowController;
 
 @end
 
@@ -335,6 +338,36 @@
         }
     }
 }
+
+- (IBAction)createDemoAction:(id)sender {
+    NSString *str = self.contentTextView.string;
+    if (str.length > 0) {
+        NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+        NSError *err = nil;
+        
+        id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&err];
+        if (obj && !err) {
+            self.demoWindowController = [[XCDemoWindowController alloc] initWithWindowNibName:@"XCDemoWindowController"];
+            _demoWindowController.sourceData = obj;
+//            [_demoWindowController.window setLevel:NSMainMenuWindowLevel];
+//            [_demoWindowController showWindow:self];
+            [_demoWindowController window];
+        }
+        else
+        {
+            NSAlert *alert = [[NSAlert alloc] init];
+            [alert addButtonWithTitle:@"确定"];
+            [alert setMessageText:@"提示"];
+            [alert setInformativeText:@"json格式错误"];
+            [alert setShowsHelp:NO];
+            [alert setAlertStyle:NSWarningAlertStyle];
+            alert.showsSuppressionButton = YES;
+            
+            [alert beginSheetModalForWindow:[NSApplication sharedApplication].keyWindow modalDelegate:self didEndSelector:nil contextInfo:nil];
+        }
+    }
+}
+
 
 #pragma mark - Table View DataSource & Delegate
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView

@@ -23,6 +23,13 @@
 		B2963EDB1859BA2F00706791 /* XCMockConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B2963ED51859BA2F00706791 /* XCMockConfig.m */; };
 		B2963EDC1859BA2F00706791 /* XCMockData.m in Sources */ = {isa = PBXBuildFile; fileRef = B2963ED71859BA2F00706791 /* XCMockData.m */; };
 		B2963EDD1859BA2F00706791 /* XCOneMock.m in Sources */ = {isa = PBXBuildFile; fileRef = B2963ED91859BA2F00706791 /* XCOneMock.m */; };
+		B2E44720187C016D002DA29D /* XCDemoWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E4471E187C016D002DA29D /* XCDemoWindowController.m */; };
+		B2E44721187C016D002DA29D /* XCDemoWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E4471F187C016D002DA29D /* XCDemoWindowController.xib */; };
+		B2E44724187C0C14002DA29D /* XCDemoPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E44723187C0C14002DA29D /* XCDemoPrinter.m */; };
+		B2E44727187C0DDC002DA29D /* XCStringDemoPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E44726187C0DDC002DA29D /* XCStringDemoPrinter.m */; };
+		B2E4472A187C0E50002DA29D /* XCNumberDemoPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E44729187C0E50002DA29D /* XCNumberDemoPrinter.m */; };
+		B2E4472D187C0EED002DA29D /* XCArrayDemoPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E4472C187C0EED002DA29D /* XCArrayDemoPrinter.m */; };
+		B2E44730187C1082002DA29D /* XCDictionaryDemoPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E4472F187C1082002DA29D /* XCDictionaryDemoPrinter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +71,19 @@
 		B2963ED71859BA2F00706791 /* XCMockData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCMockData.m; sourceTree = "<group>"; };
 		B2963ED81859BA2F00706791 /* XCOneMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCOneMock.h; sourceTree = "<group>"; };
 		B2963ED91859BA2F00706791 /* XCOneMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCOneMock.m; sourceTree = "<group>"; };
+		B2E4471D187C016D002DA29D /* XCDemoWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDemoWindowController.h; sourceTree = "<group>"; };
+		B2E4471E187C016D002DA29D /* XCDemoWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDemoWindowController.m; sourceTree = "<group>"; };
+		B2E4471F187C016D002DA29D /* XCDemoWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCDemoWindowController.xib; sourceTree = "<group>"; };
+		B2E44722187C0C14002DA29D /* XCDemoPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDemoPrinter.h; sourceTree = "<group>"; };
+		B2E44723187C0C14002DA29D /* XCDemoPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDemoPrinter.m; sourceTree = "<group>"; };
+		B2E44725187C0DDC002DA29D /* XCStringDemoPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCStringDemoPrinter.h; sourceTree = "<group>"; };
+		B2E44726187C0DDC002DA29D /* XCStringDemoPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCStringDemoPrinter.m; sourceTree = "<group>"; };
+		B2E44728187C0E50002DA29D /* XCNumberDemoPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNumberDemoPrinter.h; sourceTree = "<group>"; };
+		B2E44729187C0E50002DA29D /* XCNumberDemoPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNumberDemoPrinter.m; sourceTree = "<group>"; };
+		B2E4472B187C0EED002DA29D /* XCArrayDemoPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCArrayDemoPrinter.h; sourceTree = "<group>"; };
+		B2E4472C187C0EED002DA29D /* XCArrayDemoPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCArrayDemoPrinter.m; sourceTree = "<group>"; };
+		B2E4472E187C1082002DA29D /* XCDictionaryDemoPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDictionaryDemoPrinter.h; sourceTree = "<group>"; };
+		B2E4472F187C1082002DA29D /* XCDictionaryDemoPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDictionaryDemoPrinter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +152,20 @@
 				B20F41DC1816BB9B0097EC6B /* XCDocument.h */,
 				B20F41DD1816BB9B0097EC6B /* XCDocument.m */,
 				B20F41DF1816BB9B0097EC6B /* XCDocument.xib */,
+				B2E4471D187C016D002DA29D /* XCDemoWindowController.h */,
+				B2E4471E187C016D002DA29D /* XCDemoWindowController.m */,
+				B2E4471F187C016D002DA29D /* XCDemoWindowController.xib */,
 				B20F41E21816BB9B0097EC6B /* MainMenu.xib */,
+				B2E44722187C0C14002DA29D /* XCDemoPrinter.h */,
+				B2E44723187C0C14002DA29D /* XCDemoPrinter.m */,
+				B2E44725187C0DDC002DA29D /* XCStringDemoPrinter.h */,
+				B2E44726187C0DDC002DA29D /* XCStringDemoPrinter.m */,
+				B2E44728187C0E50002DA29D /* XCNumberDemoPrinter.h */,
+				B2E44729187C0E50002DA29D /* XCNumberDemoPrinter.m */,
+				B2E4472B187C0EED002DA29D /* XCArrayDemoPrinter.h */,
+				B2E4472C187C0EED002DA29D /* XCArrayDemoPrinter.m */,
+				B2E4472E187C1082002DA29D /* XCDictionaryDemoPrinter.h */,
+				B2E4472F187C1082002DA29D /* XCDictionaryDemoPrinter.m */,
 				B20F41E51816BB9B0097EC6B /* Images.xcassets */,
 				B2963ECE1859AD6800706791 /* MockModel */,
 				B20F41D11816BB9B0097EC6B /* Supporting Files */,
@@ -267,6 +300,7 @@
 				B20F41DB1816BB9B0097EC6B /* Credits.rtf in Resources */,
 				B20F41E11816BB9B0097EC6B /* XCDocument.xib in Resources */,
 				B20F41E41816BB9B0097EC6B /* MainMenu.xib in Resources */,
+				B2E44721187C016D002DA29D /* XCDemoWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +322,14 @@
 				B2963EDB1859BA2F00706791 /* XCMockConfig.m in Sources */,
 				B20F41D71816BB9B0097EC6B /* main.m in Sources */,
 				B20F41DE1816BB9B0097EC6B /* XCDocument.m in Sources */,
+				B2E4472A187C0E50002DA29D /* XCNumberDemoPrinter.m in Sources */,
+				B2E44727187C0DDC002DA29D /* XCStringDemoPrinter.m in Sources */,
 				B2963EDD1859BA2F00706791 /* XCOneMock.m in Sources */,
+				B2E44730187C1082002DA29D /* XCDictionaryDemoPrinter.m in Sources */,
+				B2E4472D187C0EED002DA29D /* XCArrayDemoPrinter.m in Sources */,
 				B2963EDC1859BA2F00706791 /* XCMockData.m in Sources */,
+				B2E44720187C016D002DA29D /* XCDemoWindowController.m in Sources */,
+				B2E44724187C0C14002DA29D /* XCDemoPrinter.m in Sources */,
 				B2963EDA1859BA2F00706791 /* XCMocker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
